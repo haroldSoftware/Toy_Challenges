@@ -33,7 +33,7 @@ function colors_of_socks(inpAr) {
       position = k;
       mod = shadow[k] / 2;
       pairs.push({color: position, numPairs: mod});
-      let temp = Math.floor(mod % 2);
+      let temp = Math.floor(mod);
       pairCount += temp;
     }
   }
@@ -49,12 +49,12 @@ function colors_of_socks(inpAr) {
 let n = 7;
 let ar = [1,2,1,2,1,3,2];
 let ar2 = [5,7,3,5,3,6,7,8,9,3];
-let ar3 = [5,7,3,5,3,6,7,8,9,3];
+let ar3 = [10, 20, 20, 10, 10, 30, 50, 10, 20];
 
 console.log("=============");
-console.log(colors_of_socks(ar));
+// console.log(colors_of_socks(ar));
 console.log("=============");
-console.log(colors_of_socks(ar2));
+// console.log(colors_of_socks(ar2));
 console.log("=============");
 console.log(colors_of_socks(ar3));
 console.log("=============");
